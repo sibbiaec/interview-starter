@@ -10,6 +10,7 @@ import { AppComponent } from "@app/app.component";
 import { AppRoutes } from "@app/app-router";
 import { UsersReducer } from "@state/users/users-store";
 import { UsersEffects } from "@app/_state/users/users-effects";
+import { HttpClientModule } from "@angular/common/http";
 
 bootstrapApplication(AppComponent, {
     providers: [
@@ -17,6 +18,6 @@ bootstrapApplication(AppComponent, {
         provideStore(),
         provideState(UsersReducer),
         provideEffects(UsersEffects),
-        importProvidersFrom(BrowserAnimationsModule),
+        importProvidersFrom(BrowserAnimationsModule, HttpClientModule),
     ]
 });

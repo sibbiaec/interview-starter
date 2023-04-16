@@ -1,0 +1,154 @@
+.user-management-page {
+    padding: 30px;
+}
+
+.user-management-header {
+    border: 1px solid #b7b1b1;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.user-management-content {
+    border: 1px solid #b7b1b1;
+    padding: 30px;
+    max-height: 75vh;
+    overflow-y: auto;
+}
+table {
+    width: 100%;
+  }
+  
+  tr.user-detail-row {
+    height: 0;
+  }
+  
+  tr.user-element-row:not(.user-expanded-row):hover {
+    background: whitesmoke;
+  }
+  
+  tr.user-element-row:not(.user-expanded-row):active {
+    background: #efefef;
+  }
+  
+  .user-element-row td {
+    border-bottom-width: 0;
+  }
+  
+  .user-element-detail {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .user-element-detail  div {
+    padding: 10px;
+  }
+  
+  .user-element-diagram {
+    min-width: 80px;
+    border: 2px solid black;
+    padding: 8px;
+    font-weight: lighter;
+    margin: 8px 0;
+    height: 104px;
+  }
+  
+  .user-element-symbol {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: normal;
+  }
+  
+  .user-element-description {
+    padding: 16px;
+  }
+  
+  .user-element-description-attribution {
+    opacity: 0.5;
+  }
+  
+  /* Style the textbox */
+  label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff;
+  }
+
+  /* Style the buttons */
+  .button-container {
+    margin: 10px;
+  }
+
+  button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    position: relative;
+  }
+
+  button.save {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+
+  button.cancel {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  
+  .button-loading .button-text {
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .button-loading::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 4px solid transparent;
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+  }
+
+  button[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  @keyframes button-loading-spinner {
+    from {
+      transform: rotate(0turn);
+    }
+  
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+  .mat-icon {
+    height: 17px;
+  }
